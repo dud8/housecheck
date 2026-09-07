@@ -140,7 +140,7 @@ One number different — and the answer is different.
 
 ```bash
 npm test
-# tests 55   pass 55   fail 0
+# tests 61   pass 61   fail 0
 ```
 
 then
@@ -151,7 +151,7 @@ node src/match.ts --upc="0 11110-60902 1" --lot=P-1950 --julian=173 --best_by=20
 
 showing `AFFECTED` with the three `[YES]` clause lines.
 
-**Caption.** `The predicate engine is 55 assertions over real frozen notices.
+**Caption.** `The engine is 61 assertions over real frozen notices.
 Plain node --test, no framework.`
 Then: `13,480 notices committed to the repo. No network at runtime. No API key.`
 

@@ -54,7 +54,7 @@ no build step.
 
 ```bash
 npm install          # one dependency: @modelcontextprotocol/sdk (+ zod)
-npm test             # 55 assertions over the real frozen notices
+npm test             # 61 assertions over the real frozen notices
 npm run serve        # http://127.0.0.1:8765
 ```
 
@@ -115,11 +115,12 @@ data/CODE_INFO_TAXONOMY.md the 25 shapes of code_info text, measured over the co
 
 src/predicates.ts   the crown jewel — code_info free text -> decidable predicate
 src/match.ts        resolve a product to candidate notices (SQLite FTS5 + barcode)
+                    and reject the ones that only share a word with the query
 src/card.ts         the result card, one renderer for the CLI and the web client
 src/mcp-server.ts   MCP over Streamable HTTP, spec 2025-11-25 + static web client
 
 web/index.html      simulated Alexa+ client: conversational UI, talks MCP over HTTP
-tests/              55 assertions, plain `node --test`, no framework
+tests/              61 assertions, plain `node --test`, no framework
 ```
 
 ### `src/predicates.ts` — the part that matters
@@ -247,7 +248,7 @@ Two ingestion decisions worth knowing:
 
 ```bash
 npm test          # or: node --test
-# tests 55   pass 55   fail 0
+# tests 61   pass 61   fail 0
 ```
 
 Every assertion names the `recall_number` it is about and reads that notice out
@@ -282,6 +283,14 @@ of them can produce a false clear.**
    product is flagged.
 7. **Slash-joined headers** — `REF/UDI-DI/Serial/Lot: PRT-00853/003897.../155391P`
    parse as one list rather than four positional fields.
+
+Resolution rejects weak matches instead of surfacing them. A notice has to
+contain at least half of the query's identifying words — measured, because the
+nonsense products a judge types share at most a third of theirs with the best
+notice FTS5 can find, while a real product name shares 83-100% with the right
+one — so "Sony PlayStation 5 console" now returns no match rather than a blood
+pump that happens to say "Console". A rejected match only ever removes a
+candidate, so no unit is ever cleared on a guess.
 
 And the standing limit that is not a bug: the snapshot is a fixed window. "No
 notice matches" is not a clearance, and the tool says so in those words.

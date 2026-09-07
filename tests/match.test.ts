@@ -101,3 +101,47 @@ test('every source link resolves: no malformed or non-http URL survives loading'
   assert.equal(safeUrl('hhttps://www.cpsc.gov/Recalls/2023/Y'), 'https://www.cpsc.gov/Recalls/2023/Y');
   assert.equal(safeUrl('javascript:alert(1)'), '');
 });
+
+// ---------------------------------------------------------------------------
+// relevance gate
+//
+// FTS5 returns its best candidates whether or not any of them is any good, so
+// before the gate every one of these nonsense products resolved to a confident
+// notice: "Sony PlayStation 5 console" to a blood pump, "Zqxv Fictional Brand
+// Widget 9000" to a CBD roll-on. An owner who sees that once stops believing
+// the tool. No candidates is what makes check_recall return its no-match reply.
+// ---------------------------------------------------------------------------
+
+const NONSENSE = [
+  'xqzvplt ornblat 7734',
+  'Blorptastic Fizzwhistle Deluxe',
+  'Sony PlayStation 5 console',
+  'Zqxv Fictional Brand Widget 9000',
+];
+
+for (const text of NONSENSE) {
+  test(`no_match: "${text}" resolves to nothing rather than a spurious notice`, () => {
+    assert.deepEqual(idx.search({ text, limit: 10 }), []);
+    assert.deepEqual(idx.check({ text, limit: 3 }), []);
+  });
+}
+
+test('no_match: a real word shared with a real notice is not a match on its own', () => {
+  // "console" and "game" both appear in the corpus; this product does not.
+  assert.deepEqual(idx.check({ text: 'Nintendo Switch game console', limit: 3 }), []);
+  // The notice it used to hit is still reachable by a query that means it.
+  const real = idx.search({ text: 'Medtronic blood pump console', limit: 5 });
+  assert.ok(only('Z-0509-2026', real), 'the gate must not hide a notice from a query that fits it');
+});
+
+test('the gate keeps the notices a real product name should find', () => {
+  const cases: Array<[string, Parameters<typeof idx.search>[0]]> = [
+    ['H-1230-2026', { text: 'Kroger grade A large eggs', domain: 'food', limit: 10 }],
+    ['H-1230-2026', { upc: '011110609021' }],
+    ['F-1671-2024', { text: 'Palmer Candy caramel corn', limit: 10 }],
+    ['26556', { text: 'Yamaha UMAX Bistro', limit: 10 }],
+  ];
+  for (const [recall, q] of cases) {
+    assert.ok(only(recall, idx.search(q)), `${recall} went missing for ${JSON.stringify(q)}`);
+  }
+});

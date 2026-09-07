@@ -210,9 +210,12 @@ function buildServer(): McpServer {
         { text: args.product, upc: args.upc, domain: args.domain, limit: args.limit ?? 3 },
         unit,
       );
-      if (!results.length) return reply(NOTHING, { verdict: null, results: [], cards: [] });
+      // Nothing survived the relevance gate in src/match.ts: say so plainly
+      // rather than dressing a weak candidate up as a match.
+      if (!results.length) return reply(NOTHING, { verdict: null, no_match: true, results: [], cards: [] });
       return reply(results.map(speak).join('\n\n'), {
         verdict: results[0].assessment.verdict,
+        no_match: false,
         questions: results[0].assessment.questions,
         missing_codes: results[0].assessment.missingKeys,
         results: results.map(wire),
@@ -237,7 +240,7 @@ function buildServer(): McpServer {
     },
     async (args) => {
       const found = index.search({ text: args.query, upc: args.upc, domain: args.domain, limit: args.limit ?? 8 });
-      if (!found.length) return reply(NOTHING, { matches: [] });
+      if (!found.length) return reply(NOTHING, { no_match: true, matches: [] });
       const matches = found.map((c) => ({
         recall_number: c.notice.recall_number,
         product: c.notice.product_description,
