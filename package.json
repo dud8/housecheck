@@ -1,0 +1,21 @@
+{
+  "name": "housecheck",
+  "version": "1.0.0",
+  "description": "Recall checker that decides whether YOUR unit is affected, not just your product.",
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "test": "node --test",
+    "serve": "node src/mcp-server.ts",
+    "fetch": "node data/fetch.ts",
+    "taxonomy": "node data/taxonomy.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^4.5.4"
+  }
+}

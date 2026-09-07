@@ -1,0 +1,1557 @@
+{
+  "generated_at": "2026-09-07T02:07:46.373Z",
+  "corpus": 13480,
+  "classes": [
+    {
+      "cls": "LOT_LIST",
+      "total": 6504,
+      "food": 1646,
+      "drug": 2478,
+      "device": 2206,
+      "consumer": 174,
+      "note": "Enumerated set membership. Exact/normalised match against a token set.",
+      "pattern": "\\b(lots?|batch(es)?)\\s*(codes?|numbers?|nos?\\.?|#s?)?\\s*[:#]?\\s*[A-Z0-9][A-Z0-9\\-.\\/]{2,}",
+      "examples": [
+        {
+          "id": "fda:H-1225-2026",
+          "domain": "food",
+          "code_info": "Lot: 60609-8 EXP: 06/08/28"
+        },
+        {
+          "id": "fda:H-1224-2026",
+          "domain": "food",
+          "code_info": "Lot Code: LZ1 R169 Expiration Date (s): 06/30/2028"
+        },
+        {
+          "id": "fda:H-1222-2026",
+          "domain": "food",
+          "code_info": "LOT: A6FF4, Best By: 11/2028"
+        },
+        {
+          "id": "fda:H-1223-2026",
+          "domain": "food",
+          "code_info": "Production lane number and Best By Dates on 4oz/113g pouches:  Number \"4\" on the yellow right seam on the back of the pouch which indicates the packaging production lane 4.   Best By Dates (BB): 01/19/2027 01/20/2027 03/17/2027 03/18/2027 05/14/2027 05/15/2027  LOT CODES printed on MASTER CASE (10 pouches/ case): 260119, 260120, 260317, 260318, 260514, 260515"
+        },
+        {
+          "id": "fda:H-1237-2026",
+          "domain": "food",
+          "code_info": "Lot Numbers:  0011849964, 0011988192, 0012085206."
+        },
+        {
+          "id": "fda:H-1193-2026",
+          "domain": "food",
+          "code_info": "Food pouch (3-layer foil, spouted, Cheer Pack Part#CP6088) manufactured for packaging food products. Customer Part #31720. Manufacture date 10/25/25 - 10/31/25.  Lot Numbers: LSS20100005297, LSS2010000598, LSS20100005300, LSS20100005301, LSS 20100005302, LSS20100005303, LSS20100005304, LSS2015306, LSS20100005307, LSS20100005308, LSS20100005309, LSS20100005310."
+        },
+        {
+          "id": "fda:H-1196-2026",
+          "domain": "food",
+          "code_info": "Batch No: ENGOT24 EXP: OCT 2028 UPC: 1234561870003"
+        },
+        {
+          "id": "fda:H-1195-2026",
+          "domain": "food",
+          "code_info": "Item No. CKJ19067 Lot: 20251106Z1-1 Expiration: NOV/05/2026"
+        },
+        {
+          "id": "fda:H-1194-2026",
+          "domain": "food",
+          "code_info": "Lot #: OA00822015 Best By: 9/21/2024 Lot #: Z2412426123 Best By: 5/3/2026 Lot #: Z2424526232 Best By: 9/21/2026 Lot #: Z2435226351 Best By: 12/17/2026 Lot #: Z2507827077 Best By: 7/8/2027 Lot #: Z2524927248 Best By: 9/5/2027"
+        },
+        {
+          "id": "fda:H-1236-2026",
+          "domain": "food",
+          "code_info": "Batch: 6D08 Code: 6A14 and Farm Registration Number: TN000643/006 Code: 6A21 and Farm Registration Numbers: TN000643/006, TN000643/007 Code: 6A25 and Farm Registration Number: TN000603/002 Best-by/Expiration Date: April 7, 2028 Approval No. 941"
+        }
+      ]
+    },
+    {
+      "cls": "UDI",
+      "total": 3405,
+      "food": 0,
+      "drug": 0,
+      "device": 3405,
+      "consumer": 0,
+      "note": "Device identity; GS1 AI form (01)…(17)…(10)… embeds expiry and lot.",
+      "pattern": "\\bUDI\\b",
+      "examples": [
+        {
+          "id": "fda:Z-2943-2026",
+          "domain": "device",
+          "code_info": "1) SOP30SPBCC, UDI-DI: 10195594687137(each), 50195594687135(case), Lot Number:12206¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿ ; 2) SOP30SPBCC, UDI-DI: 10195594687137(each), 50195594687135(case), Lot Number:13289¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿ ; 3) SOP30SPBCC, UDI-DI: 10195594687137(each), 50195594687135(case), Lot Number:13289¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿ ;"
+        },
+        {
+          "id": "fda:Z-2926-2026",
+          "domain": "device",
+          "code_info": "UDI-DI (each) 00193489015242, UDI-DI (case) 20193489015246, Lot Numbers: All lots produced between 05/27/2025 and 04/10/2026"
+        },
+        {
+          "id": "fda:Z-2930-2026",
+          "domain": "device",
+          "code_info": "Product Code: 60-1060. Shelfbox UDI-DI: 30389701011975; Pouch UDI-DI: 00389701011974; UDI-PI: (17)280501(10)0001441871. Lot Number: 0001441871."
+        },
+        {
+          "id": "fda:Z-2925-2026",
+          "domain": "device",
+          "code_info": "UDI-DI (each) 80080196314521, UDI-DI (case) 10080196314522, Lot Numbers: All lots produced between 10/27/2025 and 11/19/2025"
+        },
+        {
+          "id": "fda:Z-2924-2026",
+          "domain": "device",
+          "code_info": "UDI-DI (each) 10888277652521, UDI-DI (case) 20888277652528, Lot Numbers: All lots produced between 05/13/2025 and 04/21/2026"
+        },
+        {
+          "id": "fda:Z-2873-2026",
+          "domain": "device",
+          "code_info": "Lot Code: Product codes: 1510-1 (individual ampule) / 1510-2 (carton)    Lots:  AB3005, AB3006, AB3007, AB3008, AB3009, AB3010, AB4001, AB4002, AB4003, AB4004, AB4005 AB4006, AB5001, AB5002, AB5003, AB5004, AB5005,AB5006, AB5007, AB5008  No individual UDI, as this product is used only within convenience kits."
+        },
+        {
+          "id": "fda:Z-2766-2026",
+          "domain": "device",
+          "code_info": "UDI/DI 00085412014319, Lot Numbers:  DR26C27062, exp. 30-MAR-2028; DR26D14031, exp. 15-Apr-2028; DR26E13055, exp. 14-May-2028"
+        },
+        {
+          "id": "fda:Z-2922-2026",
+          "domain": "device",
+          "code_info": "S8698GX    UDI-DI 20612479214716    Lot D5M3438FY"
+        },
+        {
+          "id": "fda:Z-2913-2026",
+          "domain": "device",
+          "code_info": "navify Digital Pathology (on-prem) v2.5, Material Number 10092343001  navify Digital Pathology (Cloud) v2.5. Material Number 09453733001  UDI-DI Code: 761333602095AQ  Software version Numbers: 2.5.0, 2.5.0.1, 2.5.0.2, and 2.5.1"
+        },
+        {
+          "id": "fda:Z-2923-2026",
+          "domain": "device",
+          "code_info": "UDI-DI (each) 10888277652514, UDI-DI (case) 20888277652511, Lot Numbers: All lots produced between 05/20/2025 and 05/8/2026"
+        }
+      ]
+    },
+    {
+      "cls": "EXPIRY_DATE",
+      "total": 3001,
+      "food": 392,
+      "drug": 2418,
+      "device": 184,
+      "consumer": 7,
+      "note": "Expiry equality or set membership; formats range from 10/2025 to 31-08-25.",
+      "pattern": "\\b(exp(\\.|iry|iration)?|expires?|BUD)\\s*(date)?s?\\s*[:#]?\\s*(\\d|jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)",
+      "examples": [
+        {
+          "id": "fda:H-1225-2026",
+          "domain": "food",
+          "code_info": "Lot: 60609-8 EXP: 06/08/28"
+        },
+        {
+          "id": "fda:H-1196-2026",
+          "domain": "food",
+          "code_info": "Batch No: ENGOT24 EXP: OCT 2028 UPC: 1234561870003"
+        },
+        {
+          "id": "fda:H-1195-2026",
+          "domain": "food",
+          "code_info": "Item No. CKJ19067 Lot: 20251106Z1-1 Expiration: NOV/05/2026"
+        },
+        {
+          "id": "fda:H-1236-2026",
+          "domain": "food",
+          "code_info": "Batch: 6D08 Code: 6A14 and Farm Registration Number: TN000643/006 Code: 6A21 and Farm Registration Numbers: TN000643/006, TN000643/007 Code: 6A25 and Farm Registration Number: TN000603/002 Best-by/Expiration Date: April 7, 2028 Approval No. 941"
+        },
+        {
+          "id": "fda:H-1190-2026",
+          "domain": "food",
+          "code_info": "Lot: CA1G24 Expiration: 08-2027"
+        },
+        {
+          "id": "fda:H-1180-2026",
+          "domain": "food",
+          "code_info": "lot: 25/08001 Expiration date: 02-11-2028"
+        },
+        {
+          "id": "fda:H-1185-2026",
+          "domain": "food",
+          "code_info": "1. Product# AB9917 Lot #: 2800  Exp: 2/2028 2.Product# AB9904 Lot #: 2782 Exp: 5/2028"
+        },
+        {
+          "id": "fda:H-1175-2026",
+          "domain": "food",
+          "code_info": "Lots: L536531; L500505 Exp: 12/28"
+        },
+        {
+          "id": "fda:H-1143-2026",
+          "domain": "food",
+          "code_info": "Lot Code: 2606022 Expiration Date: 06/02/2027"
+        },
+        {
+          "id": "fda:H-1147-2026",
+          "domain": "food",
+          "code_info": "Expiration Date: July 28,2026"
+        }
+      ]
+    },
+    {
+      "cls": "MODEL_CATALOG",
+      "total": 2828,
+      "food": 249,
+      "drug": 14,
+      "device": 1597,
+      "consumer": 968,
+      "note": "Model/catalog set membership. Gate before any lot-level test.",
+      "pattern": "\\b(model|catalog|cat\\.|REF|part|item|reference|product)\\s*(nos?\\.?|numbers?|#|codes?)\\b",
+      "examples": [
+        {
+          "id": "fda:H-1193-2026",
+          "domain": "food",
+          "code_info": "Food pouch (3-layer foil, spouted, Cheer Pack Part#CP6088) manufactured for packaging food products. Customer Part #31720. Manufacture date 10/25/25 - 10/31/25.  Lot Numbers: LSS20100005297, LSS2010000598, LSS20100005300, LSS20100005301, LSS 20100005302, LSS20100005303, LSS20100005304, LSS2015306, LSS20100005307, LSS20100005308, LSS20100005309, LSS20100005310."
+        },
+        {
+          "id": "fda:H-1195-2026",
+          "domain": "food",
+          "code_info": "Item No. CKJ19067 Lot: 20251106Z1-1 Expiration: NOV/05/2026"
+        },
+        {
+          "id": "fda:H-1156-2026",
+          "domain": "food",
+          "code_info": "No lot numbers are on these products, so the firm's recall scope is for the entire production line for the following product numbers:  00810079833030 00810079833405 00810079837892"
+        },
+        {
+          "id": "fda:H-1100-2026",
+          "domain": "food",
+          "code_info": "Product Number SMBARMC20001  Batch/Lot 025245 and Use By 03/31/2027 Batch/Lot 025283 and Use By 04/30/2027 Batch/Lot 025322 and Use By 05/31/2027 Batch/Lot 025328 and Use By 05/31/2027"
+        },
+        {
+          "id": "fda:H-1101-2026",
+          "domain": "food",
+          "code_info": "Product Number SMBARMF20001 Batch/Lot 025230 and Use By 02/28/2027 Batch/Lot 025287 and Use By 04/30/2027 Batch/Lot 025345 and Use By 06/30/2027"
+        },
+        {
+          "id": "fda:H-1104-2026",
+          "domain": "food",
+          "code_info": "Product Number SMBARSS20001 Batch/Lot 026013 and Use By 07/31/2027 Batch/Lot 026014 and Use By 07/31/2027"
+        },
+        {
+          "id": "fda:H-1099-2026",
+          "domain": "food",
+          "code_info": "Product Number SMBARLR20001 Batch/Lot 025204 and Use By 01/31/2027 Batch/Lot 025205 and Use By 01/31/2027 Batch/Lot 025212 and Use By 02/28/2027 Batch/Lot 025216 and Use By 02/28/2027 Batch/Lot 025259 and Use By 03/31/2027 Batch/Lot 025260 and Use By 03/31/2027 Batch/Lot 026037 and Use By 08/31/2027 Batch/Lot 026040 and Use By 08/31/2027"
+        },
+        {
+          "id": "fda:H-1098-2026",
+          "domain": "food",
+          "code_info": "Product Number SMBARBE20001 Batch/Lot 025258 and Use By 03/31/2027 Batch/Lot 025346 and Use By 06/30/2027"
+        },
+        {
+          "id": "fda:H-1105-2026",
+          "domain": "food",
+          "code_info": "Product Number SMBARCO20001 Batch/Lot 025226 and Use By 02/28/2027 Batch/Lot 025274 and Use By 04/30/2027 Batch/Lot 025344 and Use By 06/30/2027"
+        },
+        {
+          "id": "fda:H-1096-2026",
+          "domain": "food",
+          "code_info": "Product Number SMBARML20001 Batch/Lot 025225 and Use By 02/28/2027 Batch/Lot 025255 and Use By 03/31/2027 Batch/Lot 025272 and Use By 03/31/2027 Batch/Lot 025342 and Use By 06/30/2027 Batch/Lot 025364 and Use By 06/30/2027"
+        }
+      ]
+    },
+    {
+      "cls": "SERIAL_LIST",
+      "total": 1455,
+      "food": 1,
+      "drug": 2,
+      "device": 1140,
+      "consumer": 312,
+      "note": "Serial set membership; frequently paired with a per-model serial range.",
+      "pattern": "\\bserial\\s*(nos?\\.?|numbers?|#)",
+      "examples": [
+        {
+          "id": "fda:F-1390-2024",
+          "domain": "food",
+          "code_info": "Serial No 181121U MFG Date: 8/1/2023 Expiry Date: 06/2025"
+        },
+        {
+          "id": "fda:D-0116-2025",
+          "domain": "drug",
+          "code_info": "Serial # 100000831961 100000820688 100000820689 100000820515"
+        },
+        {
+          "id": "fda:Z-2938-2026",
+          "domain": "device",
+          "code_info": "UDI-DI 04050147013797/  Serial Numbers:  All serial numbers up to 11608268 Software Version: 1.0.3"
+        },
+        {
+          "id": "fda:Z-2916-2026",
+          "domain": "device",
+          "code_info": "Model/Catalog Number: 96102 DisplayPort Splitter Part Number: 010-1975-00 UDI-DI codes: 1084152212706 10841522100345 Serial Numbers: Pending"
+        },
+        {
+          "id": "fda:Z-2859-2026",
+          "domain": "device",
+          "code_info": "LS-749: UDI-DI: M711BTA2020, M711LS7490, Serial Numbers: 002, 003, 007,  012, 014"
+        },
+        {
+          "id": "fda:Z-2855-2026",
+          "domain": "device",
+          "code_info": "Model/Catalog Number: FGD000100. UDI: 01072900175781181125120221NI2544-0300673 Software Version: FW Version 4.1.2.0, App version 7.28.0.11  GTIN: 7290017578118.  Serial Number: NI2544-0300673."
+        },
+        {
+          "id": "fda:Z-2878-2026",
+          "domain": "device",
+          "code_info": "GTIN 00198953056752, Lot/Serial Numbers:  SWT25510001TA, 3M1D391215, 3M1D411081, 3M1D411083, 3M1D3B100D, SWT26110010TA, SWT26070001TA, SWT26120008TA, 3M1D411080, 3M1D411082, 3M1D3B100C."
+        },
+        {
+          "id": "fda:Z-2822-2026",
+          "domain": "device",
+          "code_info": "GEM Premier 7000: Part number: 00000015279 UDI: 0195226000924 Units distributed in US:    GEM Premier 7000 Serial Nos. 26012062, 26012065, 26012069 and 26012070.  Affected Accessory: Bar Code Reader (BCR) Wand that received a configuration update on or after 8 April 2026.  Part No. 00024015859; UDI No. 08426950869634"
+        },
+        {
+          "id": "fda:Z-2826-2026",
+          "domain": "device",
+          "code_info": "GEM Premier 5000:  Part number: 00024019255   UDI: 08426950870227  Units distributed in Argentina:   GEM Premier 5000 Serial Nos.: 25100466, 24097933 and 23064897.   Affected Accessory:  Bar Code Reader (BCR) Wand that received a configuration update on or after 8 April 2026.  Part No. 00024015859; UDI No. 08426950869634"
+        },
+        {
+          "id": "fda:Z-2753-2026",
+          "domain": "device",
+          "code_info": "GTIN/UDI 00810087180126, Serial Numbers:  1-217-0053, 1-21C-0078, 1-223-0099, 1-225-0106, 1-225-0107, 1-229-0172."
+        }
+      ]
+    },
+    {
+      "cls": "NO_QUALIFIER",
+      "total": 1417,
+      "food": 405,
+      "drug": 52,
+      "device": 39,
+      "consumer": 921,
+      "note": "No recognised discriminator in the notice text.",
+      "pattern": null,
+      "examples": [
+        {
+          "id": "fda:food-99453-2",
+          "domain": "food",
+          "code_info": "MARKON BLEND LETT/ROM 80/20 WITH SEP BAGGIES 4/5# TFMX183A05 7/21/2026 TFMX184A02 7/22/2026 TFMX187B02 7/25/2026 TFMX189A03 7/27/2026 TFMX190A03 7/28/2026 TFMX190B01 7/28/2026 TFMX191A02 7/29/2026 TFMX194B02 8/1/2026"
+        },
+        {
+          "id": "fda:H-1219-2026",
+          "domain": "food",
+          "code_info": "Selec1011"
+        },
+        {
+          "id": "fda:H-1206-2026",
+          "domain": "food",
+          "code_info": "AA051526"
+        },
+        {
+          "id": "fda:H-1213-2026",
+          "domain": "food",
+          "code_info": "AA051526"
+        },
+        {
+          "id": "fda:H-1205-2026",
+          "domain": "food",
+          "code_info": "AA051526"
+        },
+        {
+          "id": "fda:H-1214-2026",
+          "domain": "food",
+          "code_info": "AA051526"
+        },
+        {
+          "id": "fda:H-1201-2026",
+          "domain": "food",
+          "code_info": "AA051526"
+        },
+        {
+          "id": "fda:H-1210-2026",
+          "domain": "food",
+          "code_info": "AA051526"
+        },
+        {
+          "id": "fda:H-1215-2026",
+          "domain": "food",
+          "code_info": "AA051526"
+        },
+        {
+          "id": "fda:H-1199-2026",
+          "domain": "food",
+          "code_info": "AA051526"
+        }
+      ]
+    },
+    {
+      "cls": "UNIVERSAL_ALL",
+      "total": 1354,
+      "food": 395,
+      "drug": 359,
+      "device": 590,
+      "consumer": 10,
+      "note": "Recall covers every unit. Predicate is constant-true; no code needed.",
+      "pattern": "\\ball\\s+(lots?|lot\\s+codes?|lot\\s+numbers?|serial\\s+numbers?|batch(es)?|units?|codes?|product)\\b|\\ball\\s+unexpired\\b",
+      "examples": [
+        {
+          "id": "fda:H-0944-2026",
+          "domain": "food",
+          "code_info": "All lot codes"
+        },
+        {
+          "id": "fda:H-0780-2026",
+          "domain": "food",
+          "code_info": "No lot numbers provided. Recall includes all product."
+        },
+        {
+          "id": "fda:H-0685-2026",
+          "domain": "food",
+          "code_info": "All Lot Codes including and prior to 01APR2027"
+        },
+        {
+          "id": "fda:H-0657-2026",
+          "domain": "food",
+          "code_info": "All Codes"
+        },
+        {
+          "id": "fda:H-0637-2026",
+          "domain": "food",
+          "code_info": "All product in distribution as of 2/27/2026"
+        },
+        {
+          "id": "fda:H-0554-2026",
+          "domain": "food",
+          "code_info": "Product Number: 9927816; all lot codes within shelf life"
+        },
+        {
+          "id": "fda:H-0553-2026",
+          "domain": "food",
+          "code_info": "Product Number: 993607; all lot codes within shelf life"
+        },
+        {
+          "id": "fda:H-0535-2026",
+          "domain": "food",
+          "code_info": "All Codes"
+        },
+        {
+          "id": "fda:H-0536-2026",
+          "domain": "food",
+          "code_info": "All Codes"
+        },
+        {
+          "id": "fda:H-0534-2026",
+          "domain": "food",
+          "code_info": "All Codes"
+        }
+      ]
+    },
+    {
+      "cls": "BEST_BY",
+      "total": 1344,
+      "food": 1333,
+      "drug": 4,
+      "device": 0,
+      "consumer": 7,
+      "note": "Consumer-facing date on the package. Highest-value key for grocery items.",
+      "pattern": "\\bbest\\s*(by|before|if\\s+used\\s+by)\\b|\\b(use|enjoy|fresh|pull|freeze)\\s*(by|thru|through)\\b|\\bsell\\s*(by|thru|through)\\b|\\bbb\\s*:|\\bpull\\s+date\\b",
+      "examples": [
+        {
+          "id": "fda:H-1230-2026",
+          "domain": "food",
+          "code_info": "Code information is printed on the left or right sides of the carton.   Codes P-1950 or 0840962 with a Julian Date between 157 and 184 and a Best By/Sell By date Between July 20 - August 17, 2026"
+        },
+        {
+          "id": "fda:H-1229-2026",
+          "domain": "food",
+          "code_info": "Code information is printed on the left or right sides of the carton.   Codes P-1950 or 0840962 with a Julian Date between 157 and 184 and a Best By/Sell By date Between July 20 - August 17, 2026"
+        },
+        {
+          "id": "fda:H-1192-2026",
+          "domain": "food",
+          "code_info": "Fresh Thru: 07/20/26"
+        },
+        {
+          "id": "fda:H-1222-2026",
+          "domain": "food",
+          "code_info": "LOT: A6FF4, Best By: 11/2028"
+        },
+        {
+          "id": "fda:H-1223-2026",
+          "domain": "food",
+          "code_info": "Production lane number and Best By Dates on 4oz/113g pouches:  Number \"4\" on the yellow right seam on the back of the pouch which indicates the packaging production lane 4.   Best By Dates (BB): 01/19/2027 01/20/2027 03/17/2027 03/18/2027 05/14/2027 05/15/2027  LOT CODES printed on MASTER CASE (10 pouches/ case): 260119, 260120, 260317, 260318, 260514, 260515"
+        },
+        {
+          "id": "fda:H-1198-2026",
+          "domain": "food",
+          "code_info": "Best By date: 2026.07.11; 2026.12.08"
+        },
+        {
+          "id": "fda:H-1197-2026",
+          "domain": "food",
+          "code_info": "Best By date: 2026.05.07"
+        },
+        {
+          "id": "fda:H-1194-2026",
+          "domain": "food",
+          "code_info": "Lot #: OA00822015 Best By: 9/21/2024 Lot #: Z2412426123 Best By: 5/3/2026 Lot #: Z2424526232 Best By: 9/21/2026 Lot #: Z2435226351 Best By: 12/17/2026 Lot #: Z2507827077 Best By: 7/8/2027 Lot #: Z2524927248 Best By: 9/5/2027"
+        },
+        {
+          "id": "fda:H-1221-2026",
+          "domain": "food",
+          "code_info": "No Lot Codes Used Best by dates: March 28, 2027, June 01, 2027, August 15, 2027,   August 25, 2027 and October 15, 2027"
+        },
+        {
+          "id": "fda:H-1179-2026",
+          "domain": "food",
+          "code_info": "Best By  codes range: 063026 through 093026"
+        }
+      ]
+    },
+    {
+      "cls": "UPC_GTIN_EAN",
+      "total": 1320,
+      "food": 395,
+      "drug": 18,
+      "device": 620,
+      "consumer": 287,
+      "note": "Product identity, not unit identity. Narrows the candidate set only.",
+      "pattern": "\\b(UPC|GTIN|EAN|SKU)\\b",
+      "examples": [
+        {
+          "id": "fda:H-1196-2026",
+          "domain": "food",
+          "code_info": "Batch No: ENGOT24 EXP: OCT 2028 UPC: 1234561870003"
+        },
+        {
+          "id": "fda:H-1157-2026",
+          "domain": "food",
+          "code_info": "UPC codes: 015051010021 Lot code*: 152, after 15:00; 153, any time"
+        },
+        {
+          "id": "fda:H-1146-2026",
+          "domain": "food",
+          "code_info": "UPC: 041262288874 Internal production number: 4228887 Lot Codes (expiration date): AUG0326, AUG1026, AUG1726"
+        },
+        {
+          "id": "fda:H-1085-2026",
+          "domain": "food",
+          "code_info": "Expiry June 30 through July 30, 2026 UPC: 68061710004"
+        },
+        {
+          "id": "fda:H-1080-2026",
+          "domain": "food",
+          "code_info": "Lot Code: 26020. Expiration: 06.12.28  UPC Codes:  6946976817911"
+        },
+        {
+          "id": "fda:H-1089-2026",
+          "domain": "food",
+          "code_info": "Expiry June 30 through July 30, 2026 64 oz UPC: 68061710050 16 oz. UPC: 68061710021"
+        },
+        {
+          "id": "fda:H-1082-2026",
+          "domain": "food",
+          "code_info": "Expiry June 30 through July 30, 2026 UPC:68061710005"
+        },
+        {
+          "id": "fda:H-1083-2026",
+          "domain": "food",
+          "code_info": "Expiry June 30 through July 30, 2026 UPC: 68061710006"
+        },
+        {
+          "id": "fda:H-1087-2026",
+          "domain": "food",
+          "code_info": "Expiry June 30 through July 30, 2026 UPC: 68061710009"
+        },
+        {
+          "id": "fda:H-1088-2026",
+          "domain": "food",
+          "code_info": "Expiry June 30 through July 30, 2026 16 oz. UPC: 68061710008 64 oz. UPC: 68061710008"
+        }
+      ]
+    },
+    {
+      "cls": "MFG_DATE",
+      "total": 630,
+      "food": 288,
+      "drug": 7,
+      "device": 118,
+      "consumer": 217,
+      "note": "Manufacture/pack date, often the only key printed on a durable good.",
+      "pattern": "\\b(manufactur\\w+|produced|packed|packaging|production)\\s*(on|date|dates|from|before|between)?\\b[^.;]{0,30}\\d",
+      "examples": [
+        {
+          "id": "fda:H-1223-2026",
+          "domain": "food",
+          "code_info": "Production lane number and Best By Dates on 4oz/113g pouches:  Number \"4\" on the yellow right seam on the back of the pouch which indicates the packaging production lane 4.   Best By Dates (BB): 01/19/2027 01/20/2027 03/17/2027 03/18/2027 05/14/2027 05/15/2027  LOT CODES printed on MASTER CASE (10 pouches/ case): 260119, 260120, 260317, 260318, 260514, 260515"
+        },
+        {
+          "id": "fda:H-1193-2026",
+          "domain": "food",
+          "code_info": "Food pouch (3-layer foil, spouted, Cheer Pack Part#CP6088) manufactured for packaging food products. Customer Part #31720. Manufacture date 10/25/25 - 10/31/25.  Lot Numbers: LSS20100005297, LSS2010000598, LSS20100005300, LSS20100005301, LSS 20100005302, LSS20100005303, LSS20100005304, LSS2015306, LSS20100005307, LSS20100005308, LSS20100005309, LSS20100005310."
+        },
+        {
+          "id": "fda:H-1138-2026",
+          "domain": "food",
+          "code_info": "Lot Code(s): 26J000059877-01  Dates of Manufacture: 04/27/2026  Lot Code(s): 26J000059877-02  Dates of Manufacture: 04/28/2026"
+        },
+        {
+          "id": "fda:H-1140-2026",
+          "domain": "food",
+          "code_info": "Lot Code(s): 26J000059879-01  Dates of Manufacture: 04/29/2026"
+        },
+        {
+          "id": "fda:H-1146-2026",
+          "domain": "food",
+          "code_info": "UPC: 041262288874 Internal production number: 4228887 Lot Codes (expiration date): AUG0326, AUG1026, AUG1726"
+        },
+        {
+          "id": "fda:H-1141-2026",
+          "domain": "food",
+          "code_info": "Lot Code(s): 26J000059880-01  Dates of Manufacture: 04/28/2026"
+        },
+        {
+          "id": "fda:H-1139-2026",
+          "domain": "food",
+          "code_info": "Lot Code(s): 26J000059878-01  Dates of Manufacture: 04/27/2026"
+        },
+        {
+          "id": "fda:H-1142-2026",
+          "domain": "food",
+          "code_info": "Item # FGJD60014, and FGJD60013 Lot: 25J000054451-01, 25J000055805-01, 26J000058455-01, 26J000060050-01, 26J000060151-01, 26J000059239-01 Manufacture Date: 8/11/2027, 10/24/2025, 4/28/2026, 5/2/2026, 6/10/2026, 4/1/2026  Expiration Date: 8/11/2027, 10/24/2027, 4/27/2028, 5/1/2028, 6/9/2028, 3/31/2028"
+        },
+        {
+          "id": "fda:H-0949-2026",
+          "domain": "food",
+          "code_info": "W1 116  Julian Codes: 116 119 120 127 134 135  Dates of Production: 4/26/2026 4/29/2026 4/30/2026 5/7/2026 5/14/2026 5/15/2026"
+        },
+        {
+          "id": "fda:H-1071-2026",
+          "domain": "food",
+          "code_info": "Product was labeled with a Packed On date of May 05. 26 or before."
+        }
+      ]
+    },
+    {
+      "cls": "DATE_RANGE",
+      "total": 629,
+      "food": 356,
+      "drug": 4,
+      "device": 82,
+      "consumer": 187,
+      "note": "Closed date interval. Both endpoints must parse or the answer is NEED_CODE.",
+      "pattern": "\\b(between|from)\\b[^.;]{0,60}\\b(to|through|thru|and)\\b[^.;]{0,40}\\d{4}|\\d{1,2}\\/\\d{1,2}\\/\\d{2,4}\\s*(-|to|through)\\s*\\d{1,2}\\/\\d{1,2}\\/\\d{2,4}",
+      "examples": [
+        {
+          "id": "fda:H-1193-2026",
+          "domain": "food",
+          "code_info": "Food pouch (3-layer foil, spouted, Cheer Pack Part#CP6088) manufactured for packaging food products. Customer Part #31720. Manufacture date 10/25/25 - 10/31/25.  Lot Numbers: LSS20100005297, LSS2010000598, LSS20100005300, LSS20100005301, LSS 20100005302, LSS20100005303, LSS20100005304, LSS2015306, LSS20100005307, LSS20100005308, LSS20100005309, LSS20100005310."
+        },
+        {
+          "id": "fda:food-99205-99",
+          "domain": "food",
+          "code_info": "Julian Dates 3355 to 1536 (mfg. dates: 12/01/2025 to 06/02/2026)"
+        },
+        {
+          "id": "fda:H-0932-2026",
+          "domain": "food",
+          "code_info": "Expiration Date: From 04/03/2026 to 05/03/2026 Lot#034320462, 034320562, 034320662, 034320962, 034321062, 034321162, 034321262, 034321362, 034321662, 034321762, 034321862, 034321962, 034322062, 034322362, 034322462, 034322562, 034322662, 034322762, 034323062, 034323162, 044320162, 044320262, 044320362"
+        },
+        {
+          "id": "fda:H-0919-2026",
+          "domain": "food",
+          "code_info": "Expiration Date: From 04/03/2026 to 05/03/2026 Lot#034320462, 034320562, 034320662, 034320962, 034321062, 034321162, 034321262, 034321362, 034321662, 034321762, 034321862, 034321962, 034322062, 034322362, 034322462, 034322562, 034322662, 034322762, 034323062, 034323162, 044320162, 044320262, 044320362"
+        },
+        {
+          "id": "fda:H-0920-2026",
+          "domain": "food",
+          "code_info": "Expiration Date: From 04/03/2026 to 05/03/2026 Lot#034320462, 034320562, 034320662, 034320962, 034321062, 034321162, 034321262, 034321362, 034321662, 034321762, 034321862, 034321962, 034322062, 034322362, 034322462, 034322562, 034322662, 034322762, 034323062, 034323162, 044320162, 044320262, 044320362"
+        },
+        {
+          "id": "fda:H-0935-2026",
+          "domain": "food",
+          "code_info": "Expiration Date: From 04/03/2026 to 05/03/2026 Lot#034320462, 034320562, 034320662, 034320962, 034321062, 034321162, 034321262, 034321362, 034321662, 034321762, 034321862, 034321962, 034322062, 034322362, 034322462, 034322562, 034322662, 034322762, 034323062, 034323162, 044320162, 044320262, 044320362"
+        },
+        {
+          "id": "fda:H-0927-2026",
+          "domain": "food",
+          "code_info": "Expiration Date: From 04/03/2026 to 05/03/2026 Lot#034320462, 034320562, 034320662, 034320962, 034321062, 034321162, 034321262, 034321362, 034321662, 034321762, 034321862, 034321962, 034322062, 034322362, 034322462, 034322562, 034322662, 034322762, 034323062, 034323162, 044320162, 044320262, 044320362"
+        },
+        {
+          "id": "fda:H-0929-2026",
+          "domain": "food",
+          "code_info": "Expiration Date: From 04/03/2026 to 05/03/2026 Lot#034320462, 034320562, 034320662, 034320962, 034321062, 034321162, 034321262, 034321362, 034321662, 034321762, 034321862, 034321962, 034322062, 034322362, 034322462, 034322562, 034322662, 034322762, 034323062, 034323162, 044320162, 044320262, 044320362"
+        },
+        {
+          "id": "fda:H-0924-2026",
+          "domain": "food",
+          "code_info": "Expiration Date: From 04/03/2026 to 05/03/2026 Lot#034320462, 034320562, 034320662, 034320962, 034321062, 034321162, 034321262, 034321362, 034321662, 034321762, 034321862, 034321962, 034322062, 034322362, 034322462, 034322562, 034322662, 034322762, 034323062, 034323162, 044320162, 044320262, 044320362"
+        },
+        {
+          "id": "fda:H-0926-2026",
+          "domain": "food",
+          "code_info": "Expiration Date: From 04/03/2026 to 05/03/2026 Lot#034320462, 034320562, 034320662, 034320962, 034321062, 034321162, 034321262, 034321362, 034321662, 034321762, 034321862, 034321962, 034322062, 034322362, 034322462, 034322562, 034322662, 034322762, 034323062, 034323162, 044320162, 044320262, 044320362"
+        }
+      ]
+    },
+    {
+      "cls": "GS1_AI",
+      "total": 420,
+      "food": 0,
+      "drug": 2,
+      "device": 418,
+      "consumer": 0,
+      "note": "GS1 application identifiers inline. (01) GTIN, (17) expiry, (10)/(21) lot or serial.",
+      "pattern": "\\(01\\)\\d{12,14}|\\(1[07]\\)\\d{6}|\\(2?1\\)[A-Z0-9]",
+      "examples": [
+        {
+          "id": "fda:D-0676-2025",
+          "domain": "drug",
+          "code_info": "a) lot # VE0614 exp. date 12/2025 UPC:(01)00360505058914 (5 mL)  b) lot # VE0616 exp. date 12/2025 UPC:(01)0(03)60505058921 (10 mL)"
+        },
+        {
+          "id": "fda:D-0651-2025",
+          "domain": "drug",
+          "code_info": "Only the following 6 GTN Numbers for Lot # 110459 exp. date 02/28/2027:           (01)00307813528104(21)10686040629319 (01)00307813528104(21)10687281435306 (01)00307813528104(21)10687409963168 (01)00307813528104(21)10701200331212 (01)00307813528104(21)10687325644911 (01)00307813528104(21)10687661160169"
+        },
+        {
+          "id": "fda:Z-2930-2026",
+          "domain": "device",
+          "code_info": "Product Code: 60-1060. Shelfbox UDI-DI: 30389701011975; Pouch UDI-DI: 00389701011974; UDI-PI: (17)280501(10)0001441871. Lot Number: 0001441871."
+        },
+        {
+          "id": "fda:Z-2933-2026",
+          "domain": "device",
+          "code_info": "UDI: (01)20888937027451/ Lots: 24J1202Z, 25D2302Z, 25A0202Z, 25E1502Z, 25B2802Z, 25L0802Z"
+        },
+        {
+          "id": "fda:Z-2868-2026",
+          "domain": "device",
+          "code_info": "UDI-DI (01)00887868507809(17)360228(10)67818772; Lot 67818772"
+        },
+        {
+          "id": "fda:Z-2867-2026",
+          "domain": "device",
+          "code_info": "UDI-DI (01)00887868507793(17)360407(10)67818791; Lot 67818791"
+        },
+        {
+          "id": "fda:Z-2874-2026",
+          "domain": "device",
+          "code_info": "UDI (01)00842000101215(10)9.4.0.P01(11)250916, (01)00842000101154(10)9.4.0.P02(11)260302 with Affected Versions:  9.4, 9.4 P01, and 9.4 P02."
+        },
+        {
+          "id": "fda:Z-2870-2026",
+          "domain": "device",
+          "code_info": "UDI-DI (01)00887868507823(17)360224(10)67818769; Lot 67818769 Model No 475635; UDI-DI (01)00887868507823(17)360225(10)67818770; Lot 67818770"
+        },
+        {
+          "id": "fda:Z-2877-2026",
+          "domain": "device",
+          "code_info": "Part Number: NGDS-ASY-0007 UDI-DI code: (01)00851458005136 Lot Numbers: 311825D 312025D 313526D 322925D"
+        },
+        {
+          "id": "fda:Z-2871-2026",
+          "domain": "device",
+          "code_info": "UDI-DI (01)00887868507830(17)360316(10)67818792; Lot 67818792"
+        }
+      ]
+    },
+    {
+      "cls": "OPEN_ENDED_CUTOFF",
+      "total": 380,
+      "food": 258,
+      "drug": 21,
+      "device": 40,
+      "consumer": 61,
+      "note": "Half-open interval (x <= cutoff). A missing upper bound must not clear a unit.",
+      "pattern": "\\b(and|or)\\s+(before|earlier|prior|sooner|lower|below|older)\\b|\\bprior\\s+to\\b|\\bmanufactured\\s+before\\b|\\bon\\s+or\\s+before\\b|\\bup\\s+to\\s+and\\s+includ\\w+\\b|\\ball\\s+[\\w\\s]{0,20}dates?\\s+(through|thru|up\\s+to)\\b",
+      "examples": [
+        {
+          "id": "fda:H-1152-2026",
+          "domain": "food",
+          "code_info": "24 count case with BEST IF USED BY DATES up to and including March 15, 2028 12 count package BEST IF USED BY DATES up to and including October 7, 2027"
+        },
+        {
+          "id": "fda:H-1153-2026",
+          "domain": "food",
+          "code_info": "24 count case with BEST IF USED BY DATES up to and including April 14, 2028 12 count package BEST IF USED BY DATES up to and including February 19, 2028"
+        },
+        {
+          "id": "fda:H-1071-2026",
+          "domain": "food",
+          "code_info": "Product was labeled with a Packed On date of May 05. 26 or before."
+        },
+        {
+          "id": "fda:H-1016-2026",
+          "domain": "food",
+          "code_info": "Product was labeled with a Packed On date of May 05. 26 or before."
+        },
+        {
+          "id": "fda:H-1059-2026",
+          "domain": "food",
+          "code_info": "Product was labeled with a Packed On date of May 05. 26 or before."
+        },
+        {
+          "id": "fda:H-0968-2026",
+          "domain": "food",
+          "code_info": "Product was labeled with a Packed On date of May 05. 26 or before."
+        },
+        {
+          "id": "fda:H-0991-2026",
+          "domain": "food",
+          "code_info": "Product was labeled with a Packed On date of May 05. 26 or before."
+        },
+        {
+          "id": "fda:H-0988-2026",
+          "domain": "food",
+          "code_info": "Product was labeled with a Packed On date of May 05. 26 or before."
+        },
+        {
+          "id": "fda:H-1022-2026",
+          "domain": "food",
+          "code_info": "Product was labeled with a Packed On date of May 05. 26 or before."
+        },
+        {
+          "id": "fda:H-1056-2026",
+          "domain": "food",
+          "code_info": "Product was labeled with a Packed On date of May 05. 26 or before."
+        }
+      ]
+    },
+    {
+      "cls": "BARE_CODE_LIST",
+      "total": 269,
+      "food": 66,
+      "drug": 7,
+      "device": 196,
+      "consumer": 0,
+      "note": "Unlabelled token list. Field type must be inferred from shape, not from a keyword.",
+      "pattern": "^[^a-z:]*\\b[A-Z0-9][A-Z0-9\\-.\\/]{4,}(\\s*[,;]\\s*[A-Z0-9][A-Z0-9\\-.\\/]{4,})+",
+      "examples": [
+        {
+          "id": "fda:H-1228-2026",
+          "domain": "food",
+          "code_info": "B15354, B15356, B15357, B15360, B15361, B15363"
+        },
+        {
+          "id": "fda:H-1166-2026",
+          "domain": "food",
+          "code_info": "710594511867,710594511850, 710594511560, 827912008456, 8279120084732, 710594511829, 71059511812, 827912008487, 827912008548, 710594511836, 827912008531, 827912008494, 827912008593, 827912008449, 710594511362,710594511225"
+        },
+        {
+          "id": "fda:H-1172-2026",
+          "domain": "food",
+          "code_info": "710594511867,710594511850, 710594511560, 827912008456, 8279120084732, 710594511829, 71059511812, 827912008487, 827912008548, 710594511836, 827912008531, 827912008494, 827912008593, 827912008449, 710594511362,710594511225"
+        },
+        {
+          "id": "fda:H-1160-2026",
+          "domain": "food",
+          "code_info": "710594511867,710594511850, 710594511560, 827912008456, 8279120084732, 710594511829, 71059511812, 827912008487, 827912008548, 710594511836, 827912008531, 827912008494, 827912008593, 827912008449, 710594511362,710594511225"
+        },
+        {
+          "id": "fda:H-1159-2026",
+          "domain": "food",
+          "code_info": "710594511867,710594511850, 710594511560, 827912008456, 8279120084732, 710594511829, 71059511812, 827912008487, 827912008548, 710594511836, 827912008531, 827912008494, 827912008593, 827912008449, 710594511362,710594511225"
+        },
+        {
+          "id": "fda:H-1171-2026",
+          "domain": "food",
+          "code_info": "710594511867,710594511850, 710594511560, 827912008456, 8279120084732, 710594511829, 71059511812, 827912008487, 827912008548, 710594511836, 827912008531, 827912008494, 827912008593, 827912008449, 710594511362,710594511225"
+        },
+        {
+          "id": "fda:H-1169-2026",
+          "domain": "food",
+          "code_info": "710594511867,710594511850, 710594511560, 827912008456, 8279120084732, 710594511829, 71059511812, 827912008487, 827912008548, 710594511836, 827912008531, 827912008494, 827912008593, 827912008449, 710594511362,710594511225"
+        },
+        {
+          "id": "fda:H-1167-2026",
+          "domain": "food",
+          "code_info": "710594511867,710594511850, 710594511560, 827912008456, 8279120084732, 710594511829, 71059511812, 827912008487, 827912008548, 710594511836, 827912008531, 827912008494, 827912008593, 827912008449, 710594511362,710594511225"
+        },
+        {
+          "id": "fda:H-1165-2026",
+          "domain": "food",
+          "code_info": "710594511867,710594511850, 710594511560, 827912008456, 8279120084732, 710594511829, 71059511812, 827912008487, 827912008548, 710594511836, 827912008531, 827912008494, 827912008593, 827912008449, 710594511362,710594511225"
+        },
+        {
+          "id": "fda:H-1168-2026",
+          "domain": "food",
+          "code_info": "710594511867,710594511850, 710594511560, 827912008456, 8279120084732, 710594511829, 71059511812, 827912008487, 827912008548, 710594511836, 827912008531, 827912008494, 827912008593, 827912008449, 710594511362,710594511225"
+        }
+      ]
+    },
+    {
+      "cls": "LOT_PREFIX",
+      "total": 159,
+      "food": 74,
+      "drug": 0,
+      "device": 9,
+      "consumer": 76,
+      "note": "startsWith test, sometimes combined with a numeric tail comparison.",
+      "pattern": "\\b(beginning|begins|starting|starts|start)\\s+with\\b|\\bprefix\\b",
+      "examples": [
+        {
+          "id": "fda:H-0700-2026",
+          "domain": "food",
+          "code_info": "Batch Codes for recalled product all start with  A  or  B    full list below. Batch Codes and Production Date: A22525-08-A 8/13/2025; A22525-08-B 8/13/2025; A22525-08-C 8/13/2025; A22525-08-D 8/13/2025; A22525-08-E 8/13/2025; A22525-08-F 8/13/2025; A22525-08-G 8/13/2025; A22525-08-H 8/13/2025."
+        },
+        {
+          "id": "fda:H-0309-2026",
+          "domain": "food",
+          "code_info": "lot codes starting with SO-69006 and ending with SO-72558"
+        },
+        {
+          "id": "fda:H-0310-2026",
+          "domain": "food",
+          "code_info": "lot codes starting with SO-69006 and ending with SO-72558"
+        },
+        {
+          "id": "fda:F-0206-2025",
+          "domain": "food",
+          "code_info": "All Batch Codes starting with 2C and within shelf-life. Best By Dates: OCT 01 2024 to OCT 11 2025"
+        },
+        {
+          "id": "fda:F-0154-2025",
+          "domain": "food",
+          "code_info": "All Batch Codes starting with 2C and within shelf-life. Best By Dates: OCT 01 2024 to OCT 11 2025"
+        },
+        {
+          "id": "fda:F-0157-2025",
+          "domain": "food",
+          "code_info": "All Batch Codes starting with 2C and within shelf-life. Best By Dates: OCT 01 2024 to OCT 11 2025"
+        },
+        {
+          "id": "fda:F-0173-2025",
+          "domain": "food",
+          "code_info": "All Batch Codes starting with 2C and within shelf-life. Best By Dates: OCT 01 2024 to OCT 11 2025"
+        },
+        {
+          "id": "fda:F-0190-2025",
+          "domain": "food",
+          "code_info": "All Batch Codes starting with 2C and within shelf-life. Best By Dates: OCT 01 2024 to OCT 11 2025"
+        },
+        {
+          "id": "fda:F-0203-2025",
+          "domain": "food",
+          "code_info": "All Batch Codes starting with 2C and within shelf-life. Best By Dates: OCT 01 2024 to OCT 11 2025"
+        },
+        {
+          "id": "fda:F-0165-2025",
+          "domain": "food",
+          "code_info": "All Batch Codes starting with 2C and within shelf-life. Best By Dates: OCT 01 2024 to OCT 11 2025"
+        }
+      ]
+    },
+    {
+      "cls": "SOFTWARE_VERSION",
+      "total": 129,
+      "food": 0,
+      "drug": 0,
+      "device": 129,
+      "consumer": 0,
+      "note": "Device software revision as the discriminator; ordered semver-ish compare.",
+      "pattern": "\\bsoftware\\s+(version|versions|rev)\\b|\\bfirmware\\b|\\bSW\\s+\\d+\\.\\d+",
+      "examples": [
+        {
+          "id": "fda:Z-2913-2026",
+          "domain": "device",
+          "code_info": "navify Digital Pathology (on-prem) v2.5, Material Number 10092343001  navify Digital Pathology (Cloud) v2.5. Material Number 09453733001  UDI-DI Code: 761333602095AQ  Software version Numbers: 2.5.0, 2.5.0.1, 2.5.0.2, and 2.5.1"
+        },
+        {
+          "id": "fda:Z-2938-2026",
+          "domain": "device",
+          "code_info": "UDI-DI 04050147013797/  Serial Numbers:  All serial numbers up to 11608268 Software Version: 1.0.3"
+        },
+        {
+          "id": "fda:Z-2855-2026",
+          "domain": "device",
+          "code_info": "Model/Catalog Number: FGD000100. UDI: 01072900175781181125120221NI2544-0300673 Software Version: FW Version 4.1.2.0, App version 7.28.0.11  GTIN: 7290017578118.  Serial Number: NI2544-0300673."
+        },
+        {
+          "id": "fda:Z-2834-2026",
+          "domain": "device",
+          "code_info": "Software Version 2.5 UDI-DI code: 15099590802073"
+        },
+        {
+          "id": "fda:Z-2860-2026",
+          "domain": "device",
+          "code_info": "Flow-i C20 6677200 / UDI-DI 07325710001349 Flow-i C30 6677300 / UDI-DI 07325710001363 Flow-i C40 6677400 / UDI-DI 07325710001318 Flow-i C20 6888520 / UDI-DI 07325710010617 Flow-i C30 6888530 / UDI-DI 07325710010624 Flow-i C40 6888540 / UDI-DI 07325710010631 Flow-c 6887700 / UDI-DI 07325710009765 Flow-e 6887900 / UDI-DI 07325710010457  Software versions 4.8, 4.10, and 4.11."
+        },
+        {
+          "id": "fda:Z-2795-2026",
+          "domain": "device",
+          "code_info": "All Units operating with firmware version 1.26.2/UDI:(01)17330818345674"
+        },
+        {
+          "id": "fda:Z-2805-2026",
+          "domain": "device",
+          "code_info": "Power Platform firmware versions 1.27 through 1.57 UDI-DI 17330818334562"
+        },
+        {
+          "id": "fda:Z-2778-2026",
+          "domain": "device",
+          "code_info": "Model/UDI-DI: MMT-8600/00199150038978(10)1.1.0, MMT-8601/00199150038985(10)1.1.0  Software Versions: 1.0.0, 1.1.0"
+        },
+        {
+          "id": "fda:Z-2771-2026",
+          "domain": "device",
+          "code_info": "UDI/DI 00191506068264, All released software versions (V1.1.2, V1.2.1, V1.2.2. V2.0.1, V2.0.2)"
+        },
+        {
+          "id": "fda:Z-2777-2026",
+          "domain": "device",
+          "code_info": "Software Version - 2.0.0 GS1 GTIN code: 199874903484 UDI code: GUDID registration is in progress"
+        }
+      ]
+    },
+    {
+      "cls": "LOT_RANGE",
+      "total": 125,
+      "food": 26,
+      "drug": 13,
+      "device": 7,
+      "consumer": 79,
+      "note": "Ordered range over lot codes. Needs a comparable key, not string compare.",
+      "pattern": "\\b(lot|batch|code|number)[^.;]{0,40}\\b(through|thru)\\b",
+      "examples": [
+        {
+          "id": "fda:H-1179-2026",
+          "domain": "food",
+          "code_info": "Best By  codes range: 063026 through 093026"
+        },
+        {
+          "id": "fda:H-0909-2026",
+          "domain": "food",
+          "code_info": "Product Number: SSP980713 Batch: 046188 through 046193, Lot: 0126, Best By: 01/12/2028 Batch: 047290 through 047296, Lot: 0476, Best By: 02/16/2028 Batch: 048029 through 048034, Lot: 0686, Best By: 03/09/2028 Batch: 049089 through 049094, Lot: 1106, Best By: 04/20/2028"
+        },
+        {
+          "id": "fda:H-0910-2026",
+          "domain": "food",
+          "code_info": "Product Number: SSP980720 Batch: 046390 through 046393, Lot: 0196, Best By: 01/19/2028 Batch: 047107 through 047112, Lot: 0406, Best By: 02/09/2028 Batch: 048236 through 048239, Lot: 0756, Best By: 03/16/2028 Batch: 048762 through 048766, Lot: 0966, Best By: 04/06/2028 Batch: 049018 through 049022, Lot: 1106, Best By: 04/20/2028 Batch: 049218 through 049222, Lot: 1176, Best By: 04/27/2028"
+        },
+        {
+          "id": "fda:H-0326-2026",
+          "domain": "food",
+          "code_info": "Product Code: 21495 Best By Date: 09-22-2024 through 06-03-2028"
+        },
+        {
+          "id": "fda:H-0287-2025",
+          "domain": "food",
+          "code_info": "Lot # 24351 through lot # 25156 (Julian calendar)"
+        },
+        {
+          "id": "fda:H-0276-2025",
+          "domain": "food",
+          "code_info": "UPC/Product Number: 198715474572; Batch Numbers: 25121 through 25128; Best By 05/26"
+        },
+        {
+          "id": "fda:H-0293-2025",
+          "domain": "food",
+          "code_info": "Lot # 24351 through lot # 25156 (Julian calendar)"
+        },
+        {
+          "id": "fda:H-0290-2025",
+          "domain": "food",
+          "code_info": "Lot # 24351 through lot # 25156 (Julian calendar)"
+        },
+        {
+          "id": "fda:H-0284-2025",
+          "domain": "food",
+          "code_info": "Lot # 24351 through lot # 25156 (Julian calendar)"
+        },
+        {
+          "id": "fda:H-0288-2025",
+          "domain": "food",
+          "code_info": "Lot # 24351 through lot # 25156 (Julian calendar)"
+        }
+      ]
+    },
+    {
+      "cls": "MODEL_RANGE",
+      "total": 125,
+      "food": 0,
+      "drug": 0,
+      "device": 0,
+      "consumer": 125,
+      "note": "Model number ranges, e.g. the classic XYZ-100 through XYZ-140 shape.",
+      "pattern": "\\b(model|catalog|REF|part|size|date\\s*code)[^.;]{0,60}\\b(through|thru)\\b",
+      "examples": [
+        {
+          "id": "cpsc:10868",
+          "domain": "consumer",
+          "code_info": "This recall involves two styles of Madewell-branded Double V-Neck Pullover and V-Neck Cardigan women's sweaters. The sweaters were sold with or without buttons in light blue and cream and in sizes XS through L. The sweaters have long sleeves and a V-neck. \"Madewell\" and the size are printed on the neck label and \"Style #NT611\" or \"Style #NT612\" and \"HO24\" on the sewn-in side seam label."
+        },
+        {
+          "id": "cpsc:10872",
+          "domain": "consumer",
+          "code_info": "This recall involves Cat & Jack-branded children's sandals. The sandals are tan and have two raffia straps with gold buckles and plastic pearls. The brand is printed on the shoe's sole and bottom. The sandals were sold in sizes 5T through 12T."
+        },
+        {
+          "id": "cpsc:10828",
+          "domain": "consumer",
+          "code_info": "This recall involves Michley-branded children's pajamas. The recalled one-piece pajamas were sold in green with a dinosaur patch, pink with a bunny patch, yellow with a giraffe patch and purple with a rabbit patch; and in sizes 80 through 130. \"Michley\" and the size are printed on a sewn-in seam label."
+        },
+        {
+          "id": "cpsc:10804",
+          "domain": "consumer",
+          "code_info": "This recall involves all SUNS International SS6291 Solenoid Interlock switches used in residential elevators produced from August 20, 2024, through November 6, 2025, with date codes 2431 through 2543. The SUNS SS6291 interlock switch measures approximately 10 inches by 2 inches and weighs about 2-pounds. \"SUNS\", the model number and date code are printed on a label on the side of the product."
+        },
+        {
+          "id": "cpsc:10698",
+          "domain": "consumer",
+          "code_info": "This recall involves all Silks-branded children's loungewear sets. The recalled two-piece loungewear sets consist of a short-sleeved shirt and matching shorts or pants. The sets were sold in multiple colors with varying prints and in children's sizes 2T through 13/14. \"Silks\" and the size are printed on the sewn-in neck label and on the seam label."
+        },
+        {
+          "id": "cpsc:9883",
+          "domain": "consumer",
+          "code_info": "This recall involves GT Model Year 2019 through 2023 LaBomba 24\" bicycles, LaBomba 26\" bicycles, LaBomba Pro bicycles, LaBomba Rigid bicycles, and LaBomba 26\" bicycle framesets. The bicycles and framesets were sold in sea green, green, dusty blue, blue, purple, and red. The model name LaBomba is printed on the bicycle frame top-tube. \"GT\" is printed on the downtube."
+        },
+        {
+          "id": "cpsc:9873",
+          "domain": "consumer",
+          "code_info": "This recall involves Model Year 2021 through 2023 Cannondale 26\" Dave bicycles and framesets. The bicycles and framesets were sold in deep teal and stealth gray. \"Dave\" is printed on the bicycle frame top-tube. \"Cannondale\" is printed on the downtube."
+        },
+        {
+          "id": "cpsc:9617",
+          "domain": "consumer",
+          "code_info": "This recall involves The Company Store branded white children's robes. The robes are 100% cotton terry, long-sleeved, hooded, have two front pockets and two side seam belt loops with a matching belt. The robes were sold in white and in sizes 2T through 16 years. \"The Company Store\" and \"RN#86790\" are printed on a sewn-in neck label."
+        },
+        {
+          "id": "cpsc:9525",
+          "domain": "consumer",
+          "code_info": "This recall involves the WeeSprout baby sleep sack. The 100 percent cotton sleep sack was sold in sizes newborn through 36 months and in the following colors: blue dusk, dotted rose, gray stitch and rosemary stitch. All colors and sizes of the sleep sack are included in this recall."
+        },
+        {
+          "id": "cpsc:9510",
+          "domain": "consumer",
+          "code_info": "This recall involves Shanghai Jinhui Gardening Center's NewCosplay long-sleeved button-up, one-piece children's sleepwear. The children's sleepwear are made of 100% polyester and were sold in sizes 4T through 10 in panda, dinosaur and cow characters. The side-seam label displays the fiber content and washing instructions. The sewn-in neck label displays the garment's size and \"NEWCOSPLAY.\""
+        }
+      ]
+    },
+    {
+      "cls": "SERIAL_RANGE",
+      "total": 121,
+      "food": 0,
+      "drug": 0,
+      "device": 15,
+      "consumer": 106,
+      "note": "Min/max serial per model. Mixed alpha-numeric ordering is the hard part.",
+      "pattern": "\\bserial[^.;]{0,80}\\b(through|thru|to)\\b[^.;]{0,40}[A-Z0-9]",
+      "examples": [
+        {
+          "id": "fda:Z-2938-2026",
+          "domain": "device",
+          "code_info": "UDI-DI 04050147013797/  Serial Numbers:  All serial numbers up to 11608268 Software Version: 1.0.3"
+        },
+        {
+          "id": "fda:Z-1573-2026",
+          "domain": "device",
+          "code_info": "Lot Code: \" Product Code: HKO \" Version or Model: 901029 \" Catalog Number: VS100 \" Company Name: WELCH ALLYN, INC. \" Primary DI Number: 00732094214154 \" Packaging DI Number: 00732094212228 \" Device Description: VS100 UDI BASE UNIT \" Software version: 3.2.0.1 \" Serial Numbers: Refer to attached Affected Product Table"
+        },
+        {
+          "id": "fda:Z-1472-2026",
+          "domain": "device",
+          "code_info": "UDI-DI 0084569904914; All serial numbers with a manufacturing date prior to 12/04/2025"
+        },
+        {
+          "id": "fda:Z-0936-2026",
+          "domain": "device",
+          "code_info": "Model Number: M204441; UDI-DI: 00840861102433; All serial numbers produced with a software version prior to 4.82.4;"
+        },
+        {
+          "id": "fda:Z-0412-2026",
+          "domain": "device",
+          "code_info": "All serial numbers between BE43003 through BJ18014, manufactured from 12/03/2021 to 04/15/2025. Software versions 2.2.122.0 and prior, and Instructions for Use (IFU) revisions AD and prior. These CellMek devices include Cassette E."
+        },
+        {
+          "id": "fda:Z-2501-2025",
+          "domain": "device",
+          "code_info": "Lot Code: Model No: eB-U01 UDI-DI: None. Lot Numbers: All lots manufactured up to Jun. 20, 2022 Serial Numbers: All lots manufactured up to Jun. 20, 2022 Software Revisions: Firmware v1.0 Expiration Dates: Test strips: up to 2023-12-19"
+        },
+        {
+          "id": "fda:Z-2500-2025",
+          "domain": "device",
+          "code_info": "Lot Code: Model No: eB-U01 UDI-DI: (01)04712558761116 eBuricacid Meter Kit, (01)04712558761123 eBuricacid Test Strips 25pcs, (01)04712558761208 eBuricacid Test Strips 10pcs*4 Lot Numbers: All lots manufactured up to Oct. 13, 2023 Serial Numbers: All lots manufactured up to Oct. 13, 2023 Software Revisions: Firmware v1.0 Expiration Dates: Test strips: up to 2025-04-14"
+        },
+        {
+          "id": "fda:Z-1976-2025",
+          "domain": "device",
+          "code_info": "UDI: 06973375880000. Lot Number: Lot 001-120. Serial Numbers: SN110C30C580010802 to SN110C30C581200802"
+        },
+        {
+          "id": "fda:Z-1925-2025",
+          "domain": "device",
+          "code_info": "UDI-DI 00382830010825  Serial Numbers 001 through OBM00002H3613. Note earlier version serial numbers did not contain the sequence of \"OBM\""
+        },
+        {
+          "id": "cpsc:9893",
+          "domain": "consumer",
+          "code_info": "This recall involves Tracker Off Road OX EV vehicles with serial numbers between 8029703 to 8031430. The serial number is located under the charger receptacle."
+        }
+      ]
+    },
+    {
+      "cls": "EMPTY",
+      "total": 98,
+      "food": 89,
+      "drug": 1,
+      "device": 8,
+      "consumer": 0,
+      "note": "No code text at all. Must yield NEED_CODE or AFFECTED, never a clear.",
+      "pattern": "^\\s*(n\\/?a|none|not\\s+applicable|unknown|-)?\\s*\\.?\\s*$",
+      "examples": [
+        {
+          "id": "fda:H-1189-2026",
+          "domain": "food",
+          "code_info": "None"
+        },
+        {
+          "id": "fda:H-0745-2026",
+          "domain": "food",
+          "code_info": "None"
+        },
+        {
+          "id": "fda:H-0724-2026",
+          "domain": "food",
+          "code_info": "None"
+        },
+        {
+          "id": "fda:H-0737-2026",
+          "domain": "food",
+          "code_info": "None"
+        },
+        {
+          "id": "fda:H-0719-2026",
+          "domain": "food",
+          "code_info": "None"
+        },
+        {
+          "id": "fda:H-0736-2026",
+          "domain": "food",
+          "code_info": "None"
+        },
+        {
+          "id": "fda:H-0754-2026",
+          "domain": "food",
+          "code_info": "None"
+        },
+        {
+          "id": "fda:H-0713-2026",
+          "domain": "food",
+          "code_info": "None"
+        },
+        {
+          "id": "fda:H-0726-2026",
+          "domain": "food",
+          "code_info": "None"
+        },
+        {
+          "id": "fda:H-0730-2026",
+          "domain": "food",
+          "code_info": "None"
+        }
+      ]
+    },
+    {
+      "cls": "PLANT_EST",
+      "total": 60,
+      "food": 58,
+      "drug": 0,
+      "device": 1,
+      "consumer": 1,
+      "note": "Plant/establishment stamp. Discriminates otherwise identical packages.",
+      "pattern": "\\b(plant|establishment)\\s*(code|nos?\\.?|numbers?|#)|\\bEST\\.?\\s*[#:]?\\s*\\d{2,5}\\b|\\bP-\\d{3,5}\\b",
+      "examples": [
+        {
+          "id": "fda:H-1230-2026",
+          "domain": "food",
+          "code_info": "Code information is printed on the left or right sides of the carton.   Codes P-1950 or 0840962 with a Julian Date between 157 and 184 and a Best By/Sell By date Between July 20 - August 17, 2026"
+        },
+        {
+          "id": "fda:H-1229-2026",
+          "domain": "food",
+          "code_info": "Code information is printed on the left or right sides of the carton.   Codes P-1950 or 0840962 with a Julian Date between 157 and 184 and a Best By/Sell By date Between July 20 - August 17, 2026"
+        },
+        {
+          "id": "fda:H-0305-2026",
+          "domain": "food",
+          "code_info": "Code Date: DEC08  Plant Code: PLT19-145  Timestamp: 17:51 to 21:23"
+        },
+        {
+          "id": "fda:H-0647-2025",
+          "domain": "food",
+          "code_info": "Batch #33, manufactured at plant #26476, exp. 12/24/2025"
+        },
+        {
+          "id": "fda:H-0550-2025",
+          "domain": "food",
+          "code_info": "\" UPC Codes: 9787011400 \" Lot Numbers: 080226, 080326 \" Best By / Use By Dates: 080226 & 080326 \" Package Size: 8oz \" Establishment Number: 008046575"
+        },
+        {
+          "id": "fda:H-0326-2025",
+          "domain": "food",
+          "code_info": "1 NOV 25 - 9 NOV 25   \"AE\" Plant Code Only"
+        },
+        {
+          "id": "fda:H-0210-2025",
+          "domain": "food",
+          "code_info": "Plant Number: P-6562 or CA-5330; Carton UPC: 041512039638; 071230021042; 071230021011; 079893401522; 079893401508; 079893401546; 681131122771; 681131122801; 681131122764; 681131122795; 046567033310; 046567040325; 046567028798; 046567040295; 011110099327; 011110873743; 041512131950; 041512145162; 717544211747; 717544211754; 717544201441; 717544211761"
+        },
+        {
+          "id": "fda:F-1608-2024",
+          "domain": "food",
+          "code_info": "All Best By Dates Between: 05/20/24 to 06/20/25 Plant Code: 24-65"
+        },
+        {
+          "id": "fda:F-1609-2024",
+          "domain": "food",
+          "code_info": "All Best By Dates Between: 05/20/24 to 06/20/25 Plant Code: 24-65"
+        },
+        {
+          "id": "fda:F-1599-2024",
+          "domain": "food",
+          "code_info": "All Best By Dates Between: 05/20/24 to 06/20/25 Plant Code: 24-65"
+        }
+      ]
+    },
+    {
+      "cls": "NO_CODE_SYSTEM",
+      "total": 58,
+      "food": 58,
+      "drug": 0,
+      "device": 0,
+      "consumer": 0,
+      "note": "Firm states the product carries no code. Nothing to discriminate on: every unit is in scope.",
+      "pattern": "\\bno\\s+cod(e|es|ing)\\b|\\bno\\s+coding\\s+system\\b|\\bnot\\s+coded\\b",
+      "examples": [
+        {
+          "id": "fda:H-0902-2026",
+          "domain": "food",
+          "code_info": "No codes applied"
+        },
+        {
+          "id": "fda:H-0901-2026",
+          "domain": "food",
+          "code_info": "No codes applied"
+        },
+        {
+          "id": "fda:H-0402-2026",
+          "domain": "food",
+          "code_info": "no code"
+        },
+        {
+          "id": "fda:H-0403-2026",
+          "domain": "food",
+          "code_info": "No code"
+        },
+        {
+          "id": "fda:H-0306-2026",
+          "domain": "food",
+          "code_info": "No codes"
+        },
+        {
+          "id": "fda:H-0237-2026",
+          "domain": "food",
+          "code_info": "No codes"
+        },
+        {
+          "id": "fda:H-0241-2026",
+          "domain": "food",
+          "code_info": "No codes applied"
+        },
+        {
+          "id": "fda:H-0240-2026",
+          "domain": "food",
+          "code_info": "No codes applied"
+        },
+        {
+          "id": "fda:H-0234-2026",
+          "domain": "food",
+          "code_info": "No codes"
+        },
+        {
+          "id": "fda:H-0173-2026",
+          "domain": "food",
+          "code_info": "No codes applied, but customers receive a copy of the order sheet with the production date listed."
+        }
+      ]
+    },
+    {
+      "cls": "JULIAN",
+      "total": 52,
+      "food": 52,
+      "drug": 0,
+      "device": 0,
+      "consumer": 0,
+      "note": "Day-of-year encoding, usually YYDDD. Range compare after decoding.",
+      "pattern": "\\bjulian\\b",
+      "examples": [
+        {
+          "id": "fda:H-1230-2026",
+          "domain": "food",
+          "code_info": "Code information is printed on the left or right sides of the carton.   Codes P-1950 or 0840962 with a Julian Date between 157 and 184 and a Best By/Sell By date Between July 20 - August 17, 2026"
+        },
+        {
+          "id": "fda:H-1229-2026",
+          "domain": "food",
+          "code_info": "Code information is printed on the left or right sides of the carton.   Codes P-1950 or 0840962 with a Julian Date between 157 and 184 and a Best By/Sell By date Between July 20 - August 17, 2026"
+        },
+        {
+          "id": "fda:food-99205-99",
+          "domain": "food",
+          "code_info": "Julian Dates 3355 to 1536 (mfg. dates: 12/01/2025 to 06/02/2026)"
+        },
+        {
+          "id": "fda:H-0949-2026",
+          "domain": "food",
+          "code_info": "W1 116  Julian Codes: 116 119 120 127 134 135  Dates of Production: 4/26/2026 4/29/2026 4/30/2026 5/7/2026 5/14/2026 5/15/2026"
+        },
+        {
+          "id": "fda:H-0659-2026",
+          "domain": "food",
+          "code_info": "Best if Used By: 04/06/26   Lot: FSNW 089  Manufacturing location (Clackamas, OR) Julian Date"
+        },
+        {
+          "id": "fda:H-0613-2026",
+          "domain": "food",
+          "code_info": "Lot code (Julian date): 047; 054; 056; 058 Item code: 1113"
+        },
+        {
+          "id": "fda:H-0614-2026",
+          "domain": "food",
+          "code_info": "Lot code (Julian date): 051; 055 Item code: 1138"
+        },
+        {
+          "id": "fda:H-0449-2026",
+          "domain": "food",
+          "code_info": "Julian Codes: 12255, 22265, and 12415"
+        },
+        {
+          "id": "fda:H-0379-2026",
+          "domain": "food",
+          "code_info": "DSBMS2559 25115 S5060-5100 Best If Used By: APR 25 2027  DSBMS2559 25116 S5060-5100 Best If Used By: APR 26 2027  Code is interpreted as follows: DS = Direct Source Seafood BMS = Bahari Makmur Sejati 2559 = code assigned to imported container 25115 = Julian date of production 25116 = Julian date of production S5060-5100 = Plant-specific code"
+        },
+        {
+          "id": "fda:H-0227-2026",
+          "domain": "food",
+          "code_info": "Lot: LLA519501  L = Lot LA = Laurel, MD 5 = Last digit of calendar year 195 = Julian date of production 01 = Line number #1"
+        }
+      ]
+    },
+    {
+      "cls": "DATE_CODE_FORMAT",
+      "total": 27,
+      "food": 13,
+      "drug": 0,
+      "device": 1,
+      "consumer": 13,
+      "note": "Notice states the date-code layout explicitly. Free parser spec.",
+      "pattern": "\\b(YYDDD|YYYYMM|MMDDYY|DD\\.MM\\.YYYY|DD\\/MM\\/YYYY|MM\\/DD\\/YY(YY)?|MM-YYYY|YYYY-MM-DD)\\b",
+      "examples": [
+        {
+          "id": "fda:H-0180-2026",
+          "domain": "food",
+          "code_info": "Lot code which is julian date format (YYDDD) 25254 Best by date is 03/10/2026"
+        },
+        {
+          "id": "fda:H-0582-2025",
+          "domain": "food",
+          "code_info": "Batch Number: 80108690 with Best before date: 13/01/2026 (DD/MM/YYYY) Batch Number: 80108763 with Best before date: 13/01/2026 (DD/MM/YYYY)"
+        },
+        {
+          "id": "fda:H-0381-2025",
+          "domain": "food",
+          "code_info": "Best By 4/28 25104S  Code Explained: Best By: April 2028. Lot Number: 25104S Represents date of production:  YYDDD[S] YY 25 = 2025 Julian day = 104 [S] = 1 digit alpha suffix"
+        },
+        {
+          "id": "fda:H-0380-2025",
+          "domain": "food",
+          "code_info": "Best By 4/28 25104S  Code Explained: Best By: April 2028. Lot Number: 25104S Represents date of production:  YYDDD[S] YY 25 = 2025 Julian day = 104 [S] = 1 digit alpha suffix"
+        },
+        {
+          "id": "fda:H-0313-2025",
+          "domain": "food",
+          "code_info": "All expiration dates (MM/DD/YY; written on bottom of carton)"
+        },
+        {
+          "id": "fda:H-0308-2025",
+          "domain": "food",
+          "code_info": "All expiration dates (MM/DD/YY; written on bottom of carton)"
+        },
+        {
+          "id": "fda:H-0309-2025",
+          "domain": "food",
+          "code_info": "All expiration dates (MM/DD/YY; written on bottom of carton)"
+        },
+        {
+          "id": "fda:H-0310-2025",
+          "domain": "food",
+          "code_info": "All expiration dates (MM/DD/YY; written on bottom of carton)"
+        },
+        {
+          "id": "fda:H-0315-2025",
+          "domain": "food",
+          "code_info": "All expiration dates (MM/DD/YY; written on bottom of carton)"
+        },
+        {
+          "id": "fda:H-0311-2025",
+          "domain": "food",
+          "code_info": "All expiration dates (MM/DD/YY; written on bottom of carton)"
+        }
+      ]
+    },
+    {
+      "cls": "MASKED_CODE",
+      "total": 22,
+      "food": 1,
+      "drug": 0,
+      "device": 11,
+      "consumer": 10,
+      "note": "Source redacted digits (2007xxxxx to 2012xxxxx). Undecidable: NEED_CODE, never a clear.",
+      "pattern": "[A-Z0-9]*x{3,}[A-Z0-9]*",
+      "examples": [
+        {
+          "id": "fda:H-0073-2026",
+          "domain": "food",
+          "code_info": "Case Code: Jan 10 26 xxxx(military time) ET 1 Primary Package code: (first line) Jan 10 26 CT127 (second line) XXXX (military time) ET071452"
+        },
+        {
+          "id": "fda:Z-2179-2026",
+          "domain": "device",
+          "code_info": "UDI 00885825003876, Lot Numbers:  xxxxx"
+        },
+        {
+          "id": "fda:Z-2287-2025",
+          "domain": "device",
+          "code_info": "Lot numbers: V2408xxxx and runs through V2519xxxx UDI: 11-110/00850052017033; 11-310-K/00860005396948; 11-320-K/00860005396986; 11-321-K/00850052017163; 11-310-K-28/00850052017088; 11-320-K-28/00850052017071; 11-321-K-28/00850052017170"
+        },
+        {
+          "id": "fda:Z-2182-2025",
+          "domain": "device",
+          "code_info": "Lots: 2007xxxxx to 2012xxxxx (July-2020 to Dec-2020)"
+        },
+        {
+          "id": "fda:Z-2184-2025",
+          "domain": "device",
+          "code_info": "Lots: 2007xxxxx to 2012xxxxx (July-2020 to Dec-2020)"
+        },
+        {
+          "id": "fda:Z-2187-2025",
+          "domain": "device",
+          "code_info": "Lots: 2007xxxxx to 2012xxxxx (July-2020 to Dec-2020)"
+        },
+        {
+          "id": "fda:Z-2185-2025",
+          "domain": "device",
+          "code_info": "Lots: 2007xxxxx to 2012xxxxx (July-2020 to Dec-2020)"
+        },
+        {
+          "id": "fda:Z-2183-2025",
+          "domain": "device",
+          "code_info": "Lots: 2007xxxxx to 2012xxxxx (July-2020 to Dec-2020)"
+        },
+        {
+          "id": "fda:Z-2186-2025",
+          "domain": "device",
+          "code_info": "Lots: 2007xxxxx to 2012xxxxx (July-2020 to Dec-2020)"
+        }
+      ]
+    }
+  ],
+  "truncated_code_info": 243,
+  "decidability": {
+    "UNIT_DECIDABLE": 9736,
+    "WHOLE_PRODUCT": 3479,
+    "UNDECIDABLE": 265
+  }
+}

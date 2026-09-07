@@ -1,0 +1,81 @@
+{
+  "fetched_at": "2026-09-07T02:07:45.933Z",
+  "generator": "data/fetch.ts",
+  "total": 13480,
+  "by_domain": {
+    "food": 4000,
+    "drug": 3000,
+    "device": 4000,
+    "consumer": 2480
+  },
+  "with_code_info": 13473,
+  "code_info_truncated": 243,
+  "code_info_cap": 20000,
+  "date_range": {
+    "earliest": "2019-01-30",
+    "latest": "2026-09-03"
+  },
+  "queries": [
+    {
+      "source": "openfda/food",
+      "url": "https://api.fda.gov/food/enforcement.json?sort=report_date:desc&limit=1000&skip=0",
+      "records": 1000
+    },
+    {
+      "source": "openfda/food",
+      "url": "https://api.fda.gov/food/enforcement.json?sort=report_date:desc&limit=1000&skip=1000",
+      "records": 1000
+    },
+    {
+      "source": "openfda/food",
+      "url": "https://api.fda.gov/food/enforcement.json?sort=report_date:desc&limit=1000&skip=2000",
+      "records": 1000
+    },
+    {
+      "source": "openfda/food",
+      "url": "https://api.fda.gov/food/enforcement.json?sort=report_date:desc&limit=1000&skip=3000",
+      "records": 1000
+    },
+    {
+      "source": "openfda/drug",
+      "url": "https://api.fda.gov/drug/enforcement.json?sort=report_date:desc&limit=1000&skip=0",
+      "records": 1000
+    },
+    {
+      "source": "openfda/drug",
+      "url": "https://api.fda.gov/drug/enforcement.json?sort=report_date:desc&limit=1000&skip=1000",
+      "records": 1000
+    },
+    {
+      "source": "openfda/drug",
+      "url": "https://api.fda.gov/drug/enforcement.json?sort=report_date:desc&limit=1000&skip=2000",
+      "records": 1000
+    },
+    {
+      "source": "openfda/device",
+      "url": "https://api.fda.gov/device/enforcement.json?sort=report_date:desc&limit=1000&skip=0",
+      "records": 1000
+    },
+    {
+      "source": "openfda/device",
+      "url": "https://api.fda.gov/device/enforcement.json?sort=report_date:desc&limit=1000&skip=1000",
+      "records": 1000
+    },
+    {
+      "source": "openfda/device",
+      "url": "https://api.fda.gov/device/enforcement.json?sort=report_date:desc&limit=1000&skip=2000",
+      "records": 1000
+    },
+    {
+      "source": "openfda/device",
+      "url": "https://api.fda.gov/device/enforcement.json?sort=report_date:desc&limit=1000&skip=3000",
+      "records": 1000
+    },
+    {
+      "source": "cpsc",
+      "url": "https://www.saferproducts.gov/RestWebServices/Recall?format=json&RecallDateStart=2019-01-01",
+      "records": 2480
+    }
+  ],
+  "notes": "Frozen snapshot. Downstream code reads this file only; no network access at runtime."
+}
