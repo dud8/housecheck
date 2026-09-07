@@ -134,26 +134,21 @@ One number different — and the answer is different.
 
 ---
 
-## 1:52 — 2:10   Under the hood, briefly
+## 1:52 — 2:10   What it says when it does not know
 
-**Shot.** Terminal, split or cut, two commands.
+**Shot.** Back in the browser. Type a product that is not in the snapshot —
+something real but unrecalled, e.g. `Sony PlayStation 5 console`. Send.
 
-```bash
-npm test
-# tests 61   pass 61   fail 0
+The reply is not a card. It is one plain line:
+
+```
+No recall notice in the frozen snapshot matches that product.
+That is not a clearance: the snapshot covers a fixed window of
+FDA and CPSC notices, so try a different brand or wording, or a barcode.
 ```
 
-then
-
-```bash
-node src/match.ts --upc="0 11110-60902 1" --lot=P-1950 --julian=173 --best_by=2026-08-01
-```
-
-showing `AFFECTED` with the three `[YES]` clause lines.
-
-**Caption.** `The engine is 61 assertions over real frozen notices.
-Plain node --test, no framework.`
-Then: `13,480 notices committed to the repo. No network at runtime. No API key.`
+**Caption.** `No match is not "safe". The snapshot is finite, and it says so.`
+Then: `Weak matches are rejected, not surfaced. One shared word is not a recall.`
 
 ---
 
@@ -194,7 +189,11 @@ When the notice is truncated, redacted or ambiguous,
 HouseCheck asks — it never clears a unit on a guess.
 ```
 
-Hold three seconds. Cut to black on the repo URL alone.
+Hold three seconds. Cut to black on the repo URL alone:
+
+```
+github.com/dud8/housecheck
+```
 
 ---
 
